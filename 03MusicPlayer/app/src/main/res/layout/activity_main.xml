@@ -25,12 +25,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
+            android:id="@+id/elapsedTimeLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="0:00"
             android:layout_marginLeft="60dp"/>
 
         <TextView
+            android:id="@+id/remainTimeLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="0:00"
@@ -45,18 +47,20 @@
         android:layout_marginTop="50dp">
 
         <Button
-            android:id="@+id/previous"
+            android:id="@+id/previousButton"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_marginRight="50dp"
             android:background="@drawable/previous"/>
+
         <Button
-            android:id="@+id/play"
+            android:id="@+id/playButton"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:background="@drawable/play"/>
+            android:background="@drawable/play"
+            android:onClick="playButtonClick" />
         <Button
-            android:id="@+id/next"
+            android:id="@+id/nextButton"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_marginLeft="50dp"
@@ -71,7 +75,7 @@
         <ImageView
             android:layout_width="15dp"
             android:layout_height="20dp"
-            android:layout_marginLeft="40dp"
+            android:layout_marginLeft="30dp"
             android:background="@drawable/sound"/>
         <SeekBar
             android:id="@+id/volBar"
@@ -79,6 +83,11 @@
             android:layout_height="wrap_content"
             android:progress="50"
             android:max="100"/>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/sound2"/>
+
     </LinearLayout>
 
 
